@@ -7,4 +7,4 @@ def hash_calculation(filename):
         for byte_block in iter(lambda: f.read(4096), b""):
             sha256_hash.update(byte_block)
         hash_hex = sha256_hash.hexdigest()
-        global hash_hex
+        return hash_hex
